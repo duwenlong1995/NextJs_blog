@@ -1,0 +1,25 @@
+.label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 100px;
+  padding: 0.5rem 0.5rem;
+  border-radius: 10px;
+  user-select: none;
+  cursor: url('/images/hand-index.svg'), auto;
+}
+.label_primary {
+  color: #222222;
+  background-color: #ffffff;
+  .label_icon_bg {
+    .label_icon {
+      position: relative;
+      top: 2px;
+    }
+  }
+  .label_font {
+    font-size: 14px;
+    font-weight: 800;
+  }
+}

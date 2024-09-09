@@ -1,0 +1,78 @@
+$primary: #1f1515;
+$opacity: #545454;
+$fontWhite: #ffffff;
+$secondaryFontWhite: #000000;
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.8rem 0.8rem;
+  border-radius: 40px;
+  /* 使用cursor属性和url来指定图片 */
+  cursor: url("/images/hand-index.svg"), auto;
+  .btn_icon_bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fae5d1;
+    margin-right: 8px;
+    transition: all 0.4s;
+    .btn_icon {
+      z-index: -2;
+      position: relative;
+      left: -20px;
+      transition: all 0.4s;
+    }
+  }
+  .btn_text {
+    font-size: 16px;
+  }
+}
+.btn_primary {
+  background-color: $primary;
+  color: $fontWhite;
+  border: none;
+  padding: 0.8rem 0.8rem;
+}
+.btn_dynamic {
+  background-color: $primary;
+  color: $fontWhite;
+  border: none;
+  padding: 0.8rem 0.8rem;
+  overflow: hidden;
+}
+.btn_dynamic:hover {
+  background: linear-gradient(to right, #545454, #1f1515);
+  .btn_icon_bg {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #fae5d1;
+    margin-right: 8px;
+    .btn_icon {
+      z-index: 2;
+      transform: translateX(20px);
+    }
+  }
+}
+
+.btn_secondary {
+  background-color: transparent;
+  color: $secondaryFontWhite;
+  border: 1px solid #cbcbcb;
+  padding: 0.8rem 0.8rem;
+  transition: all 0.4s;
+  .btn_icon_bg {
+    .btn_icon {
+    }
+  }
+  .btn_text {
+    font-size: 16px;
+  }
+}
+.btn_secondary:hover {
+  background-color: $fontWhite;
+}

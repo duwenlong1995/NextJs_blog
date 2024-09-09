@@ -1,0 +1,28 @@
+.TabsContainer {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid rgba(5, 5, 5, 0.06);
+  cursor: pointer;
+  user-select: none;
+
+  .TabItemActive {
+    padding: 12px 12px;
+    color: #1677ff;
+    border-bottom: 2px solid #1677ff;
+  }
+  .TabItemUnActive {
+    padding: 12px 12px;
+  }
+
+  &.left {
+    justify-content: flex-start; // 对齐方式为左
+  }
+
+  &.middle {
+    justify-content: center; // 对齐方式为中
+  }
+
+  &.right {
+    justify-content: flex-end; // 对齐方式为右
+  }
+}

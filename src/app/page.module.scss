@@ -1,0 +1,78 @@
+.container {
+  min-height: 100vh;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+}
+.main {
+  width: 100%;
+  height: 600px;
+  .photo_comp {
+    .photo {
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: antiquewhite;
+    }
+    .label {
+      position: relative;
+      bottom: 20px;
+    }
+  }
+
+  .job {
+    margin-top: 8px;
+  }
+  .describe {
+    font-size: 24px;
+    margin-top: 28px;
+  }
+  .button {
+    margin-top: 28px;
+  }
+}
+.footer {
+  width: 100%;
+  height: 100px;
+  .marquee {
+    width: 75%;
+  }
+}
+.card {
+  .card_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1100px;
+    height: 500px;
+    background-color: #dfefd7;
+    border-radius: 32px;
+    transition: all 0.5s ease;
+    padding: 60px 40px;
+    .left {
+      width: 50%;
+      height: 100%;
+    }
+    .right {
+      width: 50%;
+      height: 100%;
+      padding: 10px 0px 0px 10px;
+      .img_border {
+        width: 100%;
+        height: 280px;
+        overflow: hidden;
+        border-radius: 8px;
+        position: relative;
+        .img {
+          width: 100%;
+          height: 280px;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}

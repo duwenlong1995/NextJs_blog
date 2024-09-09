@@ -10,7 +10,7 @@ const Home = () => {
   const [value, setValue] = useState("");
   const [value2, setValue2] = useState("");
   const [value3, setValue3] = useState("");
-  const handleClick = (e: any) => setValue(e.target.value);
+  // const handleClick = (e: any) => setValue(e.target.value);
   const [isActive, setIsActive] = useState(true);
   return (
     <>
